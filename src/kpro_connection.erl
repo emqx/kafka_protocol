@@ -59,7 +59,7 @@
                  | ssl.
 
 -type cfg_val() :: term().
--type config() :: [{cfg_key(), cfg_val()}] | #{cfg_key() => cfg_val()}.
+-type config() :: [{cfg_key(), cfg_val()}] | #{cfg_key() => cfg_val(), any() => cfg_val()}.
 -type requests() :: kpro_sent_reqs:requests().
 -type hostname() :: kpro:hostname().
 -type portnum()  :: kpro:portnum().
